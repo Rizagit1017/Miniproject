@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#home {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-content {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+form {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    max-width: 400px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+}
+
+.side-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+#packages {
+    background: #f2f2f2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.package-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.package {
+    background: #fff;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#call-to-action {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#call-to-action button {
+    background: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content {
+        margin-right: 0;
+    }
+
+    .package {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .package {
+        flex: 1 1 100%;
+    }
+}
